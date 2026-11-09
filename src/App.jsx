@@ -1,5 +1,5 @@
 import reactImg from './assets/react-core-concepts.png';
-import componentsImg from './assets/components.png';
+import { CORE_CONCEPTS } from './data.js';
 
 const reactDescription = ['Fundamental', 'Crucial', 'Core', 'Salayka\'s'];
 
@@ -37,12 +37,12 @@ function UserInfo() {
   );
 }
 
-function CoreConcept(props) {
-  return(
+function CoreConcept({ image, title, description }) {
+  return (
     <li>
-      <img src={props.image} alt={props.title} />
-      <h3>{props.title}</h3>
-      <p>{props.description}</p>
+      <img src={image} alt={title} />
+      <h3>{title}</h3>
+      <p>{description}</p>
     </li>
   );
 }
@@ -55,21 +55,10 @@ function App() {
         <section id="core-concepts"> 
           <h2>Time to get started!</h2>
           <ul>
-            <CoreConcept
-            title="Components"
-            description="Salayka"
-            image={componentsImg}
-            />
-            <CoreConcept
-              title="JSX"
-              description="Dawg."
-              image={componentsImg}
-            />
-            <CoreConcept
-              title="Props"
-              description="I shouldnt have crammed ts."
-              image={componentsImg}
-            />
+            <CoreConcept {...CORE_CONCEPTS[0]} />
+            <CoreConcept {...CORE_CONCEPTS[1]} />
+            <CoreConcept {...CORE_CONCEPTS[2]} />
+            <CoreConcept {...CORE_CONCEPTS[3]} />
           </ul>
         </section>
       </main>
