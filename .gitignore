@@ -27,3 +27,5 @@ pnpm-debug.log*
 !.vscode/extensions.json
 .idea/
 *.swp
+
+#This is a preset/helped from Claude to get whats needed for my gitignore.
