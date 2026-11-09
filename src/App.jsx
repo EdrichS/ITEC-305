@@ -20,7 +20,21 @@ function Header (){
   );
 }
 
+const user = {
+  firstName: 'Edrich',
+  lastName: 'Silva',
+  age: 21,
+};
 
+function UserInfo() {
+  return (
+    <div>
+      <p>First name: {user.firstName}</p>
+      <p>Last name: {user.lastName}</p>
+      <p>Age: {user.age}</p>
+    </div>
+  );
+}
 function App() {
   return (
     <div>
@@ -28,6 +42,7 @@ function App() {
       <main>
         <h2>Time to get started!</h2>
       </main>
+      <UserInfo />
     </div>
   );
 }
