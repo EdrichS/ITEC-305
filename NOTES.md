@@ -14,3 +14,5 @@ index.css: Just styling, as usual for .css files
 App.jsx: This file contains what is actually getting displayed by the website. Its a function which just returns the code that looks like HTML. Any changes made here is reflected on the website.
 
 How the code runs initially: index.html -> index.jsx -> App.jsx
+
+**Remember to change the description for props
